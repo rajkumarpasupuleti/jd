@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 
+import { API_BASE_URL } from '../config'
 import { mockJobs } from '../data/mockJobs'
 
 type UploadScoreResponse = {
@@ -47,7 +48,6 @@ type UploadScoreResponse = {
   }
 }
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8000'
 const UPLOAD_SCORE_URL = `${API_BASE_URL}/api/v1/ats/upload-score`
 
 function JsonLogBlock(props: {

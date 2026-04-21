@@ -2,6 +2,8 @@ import { useMemo, useState } from 'react'
 import type { FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 
+import { API_BASE_URL } from '../config'
+
 const DEFAULT_RESUME_JSON = `{
   "name": "Ariana Patel",
   "email": "ariana.patel@example.com",
@@ -85,7 +87,6 @@ type AtsResponse = {
   }
 }
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8000'
 const API_URL = `${API_BASE_URL}/api/v1/ats/score`
 
 export function JsonScorePage() {

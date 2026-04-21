@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+import { API_BASE_URL } from '../config'
+
 type JDKeywordResponse = {
   keywords: string[]
   required_keywords: string[]
@@ -8,7 +10,6 @@ type JDKeywordResponse = {
   boolean_query: string
 }
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8000'
 const VERSION_LABELS = {
   v1: 'V1 Pattern',
   v2: 'V2 Stop-word',
