@@ -1,3 +1,2 @@
-const LOCAL_API_BASE_URL = 'http://127.0.0.1:8000'
-
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? LOCAL_API_BASE_URL
+export const API_BASE_URL =
+  'https://73b4-2405-201-c000-a89e-407c-2f10-b447-f473.ngrok-free.app'
